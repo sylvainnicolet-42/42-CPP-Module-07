@@ -1,5 +1,5 @@
-#ifndef ITER_CLASS_HPP
-#define ITER_CLASS_HPP
+#ifndef ITER_HPP
+#define ITER_HPP
 
 template <typename T>
 void	add_3(T &n) {

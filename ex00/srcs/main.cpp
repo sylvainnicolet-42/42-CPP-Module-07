@@ -1,7 +1,7 @@
 
 #include <iostream>
 
-#include "whatever.class.hpp"
+#include "whatever.hpp"
 
 void	test_swap_int(int a, int b) {
 	std::cout << "--- Swap int ---" << std::endl;

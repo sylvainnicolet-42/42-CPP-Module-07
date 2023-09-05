@@ -1,7 +1,7 @@
 
 #include <iostream>
 
-#include "iter.class.hpp"
+#include "iter.hpp"
 
 void	test_add_3_int() {
 	std::cout << "--- Add 3 int ---" << std::endl;
