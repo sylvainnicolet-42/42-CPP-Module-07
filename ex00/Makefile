@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 # VARIABLES
-NAME 			= convert
+NAME 			= ex00
 
 # COMPILATION OPTIONS
 CC				= c++
@@ -49,7 +49,7 @@ clean:
 				@echo "$(_CLEANED)🧹Clean object files!$(_END)"
 
 fclean: 		clean
-				/bin/rm -rf $(NAME)
+				/bin/rm -rf $(NAME) export.txt
 				@echo "$(_CLEANED)🧹Clean executable files!$(_END)"
 
 re: 			fclean all
@@ -60,5 +60,8 @@ run:			all
 
 leaks:			all
 				--leaks --atExit -- ./$(NAME)
+
+export:			all
+				./$(NAME) > export.txt
 
 .PHONY:			all clean fclean re run leaks
